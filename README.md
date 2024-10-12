@@ -8,7 +8,7 @@
 ##### Bridging the gap between older folks and mental healthcare by utilizing personalized–and accessible–resources and tools, optimized by edge-cutting machine learning algorithms and predictor models.
 
 #### A visual
-![Older people and mental health]("proposal_picture.jpg")
+![Older people and mental health]("./proposal_picture.jpg")
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
 - [X] Access to care
