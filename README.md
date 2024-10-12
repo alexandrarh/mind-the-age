@@ -8,13 +8,7 @@
 ##### Bridging the gap between older folks and mental healthcare by utilizing personalized–and accessible–resources and tools, optimized by edge-cutting machine learning algorithms and predictor models.
 
 #### A visual
-![Older people and mental health]("https://insights.ibx.com/wp-content/uploads/2018/08/stigma-mentalhealth.jpg")
-<img height="10%" width="50%"> 
-
-<!--
-#### Theme: Enhancing Healthcare's Digital Front Door
-#### - Digital solutions to help increase access, manage health, and improve patient satisfaction along the healthcare journey -  
--->
+![Older people and mental health]("proposal_picture.jpg")
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
 - [X] Access to care
