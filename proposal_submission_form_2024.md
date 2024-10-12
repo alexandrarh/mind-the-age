@@ -1,16 +1,15 @@
 ### 2024 BIG DATA HACKATHON PROPOSAL FORM
 
-#### Team Number: `Team-133`  
+#### Team Number: Team-133  
 
-#### Team Name: `Friar Health`    
+#### Team Name: Friar Health    
   
 #### Your team's hackathon idea in One sentence:
-##### `YOUR ONE SENTENCE HERE`
-
+##### Bridging the gap between older folks and mental healthcare by utilizing personalized–and accessible–resources and tools, optimized by edge-cutting machine learning algorithms and predictor models.
 
 #### A visual
-![bigdatahackathon4sd](https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/bigdatahackathon_sd_2024.png?raw=true "Big Data Hackathon for San Diego 2024")
-<img height="10%" width="50%" alt="HDMA" src="https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/hdma2.png?raw=true"> 
+![Older people and mental health]("https://insights.ibx.com/wp-content/uploads/2018/08/stigma-mentalhealth.jpg")
+<img height="10%" width="50%"> 
 
 <!--
 #### Theme: Enhancing Healthcare's Digital Front Door
@@ -18,7 +17,7 @@
 -->
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
-- [ ] Access to care
+- [X] Access to care
 > How can we make it easier to access care (especially specialists) and provide clear, timely notifications, and reminders along their healthcare journey?
 - [ ] Patient satisfaction
 > How can we make it more convenient for patients to provide real-time feedback about their healthcare experience through a mobile app?
@@ -26,7 +25,7 @@
 > As a potential new customer, how can we leverage the mobile app to help new patients better understand what services are available to them?
 - [ ] Managing my health
 > It's easy to get overwhelmed by all the tasks patients often have to do to maintain their health, how can we make managing health more enjoyable?
-- [ ] Addressing mental health challenges
+- [X] Addressing mental health challenges
 > Mental health challenges may be difficult to identify and have a broad impact on health, how can we help clinicians be more in tune with patients mental health needs?
 
 #### Optional Questions. `TEAMS CAN SELECT ONE ADDITIONAL OPTIONAL QUESTION (insert X in [ ])`
@@ -44,4 +43,5 @@
 #### Team Members
 - Alexandra Hernandez, @alexandrarh
 - Armin Irvije, @Armin-Irvije
+- Zaina Kudchiwala
 
