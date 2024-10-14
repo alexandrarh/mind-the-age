@@ -35,7 +35,7 @@
 #### Team Coordinator GitHub Username: [alexandrarh](https://github.com/alexandrarh)
 
 #### Team Members
-- Alexandra Hernandez, @alexandrarh
-- Armin Irvije, @Armin-Irvije
-- Zaina Kudchiwala
+- Alexandra Hernandez, `@alexandrarh`
+- Armin Irvije, `@Armin-Irvije`
+- Zaina Kudchiwala, `@Zaina15`
 
