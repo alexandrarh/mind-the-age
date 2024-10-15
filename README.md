@@ -8,7 +8,12 @@
 ##### Bridging the gap between older folks and mental healthcare by utilizing personalized–and accessible–resources and tools, optimized by edge-cutting machine learning algorithms and predictor models.
 
 #### A visual
-![Older people and mental health]("./proposal_picture.jpg")
+<img width="358" alt="Older people and mental health" src="./proposal_picture.jpg">
+
+<!--
+#### Theme: Enhancing Healthcareâ€™s Digital Front Door
+#### - Digital solutions to help increase access, manage health, and improve patient satisfaction along the healthcare journey -  
+-->
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
 - [X] Access to care
