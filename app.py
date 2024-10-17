@@ -17,7 +17,7 @@ anthropic = anthropic.Anthropic(api_key=anthropic_key)
 
 # Loading data
 sample_data = pd.read_csv('database_sample.csv')
-sample_data['income_pension'] = pd.to_numeric(sample_data['income_pension'].str.replace(',', ''), errors='coerce')
+sample_data['patient_comment'] = sample_data['patient_comment'].fillna('').astype('object')
 
 # Headers for all pages
 st.title("MindTheAge")
@@ -107,7 +107,7 @@ def mental_health_page():
 def mental_health_evaluation():
     st.header("Mental Health Evaluation")
     st.write("Please review and/or edit the following responses before proceeding.")
-    sample_data['birthday'] = pd.to_datetime(sample_data['birthday'], format='%m/%d/%Y', errors='coerce')
+    sample_data['birthday'] = pd.to_datetime(sample_data['birthday'], errors='coerce')
 
     email = st.session_state['email']  # Access the email from session state
 
@@ -146,7 +146,7 @@ def mental_health_evaluation():
             sample_data.loc[index, 'last_name'] = last_name
             st.session_state['last_name'] = last_name
 
-            sample_data.loc[index, 'birthday'] = birthday
+            sample_data.loc[index, 'birthday'] = pd.to_datetime(birthday)
             st.session_state['birthday'] = birthday
 
             sample_data.loc[index, 'on_medicare'] = on_medicare
@@ -158,7 +158,7 @@ def mental_health_evaluation():
             sample_data.loc[index, 'county'] = county
             st.session_state['county'] = county
 
-            sample_data.loc[index, 'patient_comment'] = patient_input
+            sample_data.loc[index, 'patient_comment'] = str(patient_input)
             st.session_state['patient_comment'] = patient_input
 
             st.session_state.show_progress = True
@@ -189,6 +189,12 @@ def get_mental_health_resources():
         
         time.sleep(1)  # Additional delay at the end
         my_bar.empty()
+
+        # Function to display mental health resources
+        st.markdown("**:blue[Based on your responses and information, here are some mental health resources:]**")
+        # Test part -> remove when fixed
+        st.write(st.session_state['county'])
+        st.write(st.session_state['patient_comment'])
 
         # Reset the progress flag after completion
         st.session_state.show_progress = False
