@@ -14,50 +14,85 @@ resourceLinks = pd.read_csv('data/resource_link.csv')
 # conduct more testing , think or edge and corner cases
 
 # manually standardized some matching words:
+# how do I take into account race&gender specific websites?
+mappingCondition = {
+    'Anxiety': 'anxiety,mental,health,wellness'
+}
 mappingGender = {
     'Male' : 'male,men,man,boy', 
     'Female': 'female,women,woman,girl'
+    # include non binary
 }
-
 mappingRace = {
-    'African American' : 'Black'
+    'African American' : 'Black',
+    'White' : 'group,people,community'
 }
 
-# will probably have to do fuzzy matching in this function as well based on user app data
 def match_pace_facility(county):
 
+    # Filter by county
     matchedRow = paceData[paceData['County'] == county]
-    if not matchedRow.empty:
-        return matchedRow['PACE Organization'].values[0]  
-    else:
-        return "No matching PACE facility"
+    
+    # Within the county, find rows with the "full dual"
+    full_dual_rows = matchedRow[matchedRow['Category of Aid'] == 'Full-Dual']
+    
+    # If no full dual rows, return no matching facility?
+    
+    # Find the row with the lowest upper bound cost
+    min_cost_row = full_dual_rows.loc[full_dual_rows['Upper Bound'].idxmin()]
+    
+    return min_cost_row['PACE Organization']
 
 # match resource link using fuzzy matching
-def match_resource_link(condition, race, gender):
-
-    standardizeGender = mappingGender.get(gender, gender)
+# matching algorithm not very accurate
+def match_resource_link(category, usedLinks):
 
     # function perfroms fuzzy string matching by compairing strings and returing the one that is most similar
     # and a score that indicates how similar the match is to the input string tuple ("string", 90)
-    bestMatch = process.extractOne(condition + ' ' + race + ' ' + standardizeGender, resourceLinks['Description']) 
-   
-    if bestMatch and bestMatch[1] > 60:  # threshold for match confidence
+    # just separate extract function by the 3 criteria 
+    bestMatch = process.extractOne(category, resourceLinks['Description']) 
+    if bestMatch and bestMatch[1] > 10:  # threshold for match confidence
         matchedRow = resourceLinks[resourceLinks['Description'] == bestMatch[0]]
-        return matchedRow['Link'].values[0]  
-    else: 
+        link = matchedRow['Link'].values[0]
+        #check if it is a link we used OR add it to the used list
+        if link not in usedLinks:
+            usedLinks.append(link)
+            return matchedRow['Link'].values[0]
+        # else: find another link  
+    else:
         return "No matching resource link found"
+    
+
+def get_all_links(user_input):
+    # user input is a key value
+    # we standarize and retrieve the according value 
+    condition = mappingCondition.get(user_input.get('Condition'),user_input.get('Race'))
+    race = mappingRace.get(user_input.get('Race'), user_input.get('Race'))
+    gender = mappingGender.get(user_input.get('Gender'),user_input.get('Gender'))
+
+    # initialize new list and map
+    usedLinks = []
+    resourceLinks = {}
+
+    # fill the key value pair with the matching link
+    resourceLinks['Race'] = match_resource_link(race, usedLinks)
+    resourceLinks['Gender'] = match_resource_link(gender, usedLinks)
+    resourceLinks['Condition'] = match_resource_link(condition, usedLinks)
+    return resourceLinks
 
 # Example user input
+# fuzzy matching maps white -> black
 user_input = {
     'Condition': 'depression',
-    'County': 'Sacramento',
-    'Race': 'Black',
-    'Gender': 'Male'
+    'County': 'Alameda',
+    'Race': 'Asian',
+    'Gender': 'Women'
 }
 
-# results
-pace_facility = match_pace_facility(user_input['County'])
-resource_link = match_resource_link(user_input['Condition'], user_input['Race'], user_input['Gender'])
+paceFacility = match_pace_facility(user_input['County'])
+resourceLinks = get_all_links(user_input)
 
-print(f"Recommended PACE Facility: {pace_facility}")
-print(f"Relevant Resource Link: {resource_link}")
+print(f"recommended PACE Facility: {paceFacility}")
+print(f"Tailored resource Links: {resourceLinks}")
+
+
