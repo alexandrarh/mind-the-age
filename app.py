@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 import anthropic
+import time
 
 # Loading classifier model
 with open('mental_health_classifier.pkl', 'rb') as f:
@@ -16,6 +17,7 @@ anthropic = anthropic.Anthropic(api_key=anthropic_key)
 
 # Loading data
 sample_data = pd.read_csv('database_sample.csv')
+sample_data['income_pension'] = pd.to_numeric(sample_data['income_pension'].str.replace(',', ''), errors='coerce')
 
 # Headers for all pages
 st.title("MindTheAge")
@@ -24,6 +26,22 @@ st.markdown('Bridging the gap between older folks and mental healthcare.')
 # Initialization of session states
 if 'email' not in st.session_state:
     st.session_state['email'] = ''
+if 'first_name' not in st.session_state:
+    st.session_state['first_name'] = ''
+if 'last_name' not in st.session_state:
+    st.session_state['last_name'] = ''
+if 'birthday' not in st.session_state:
+    st.session_state['birthday'] = ''
+if 'on_medicare' not in st.session_state:
+    st.session_state['on_medicare'] = ''
+if 'city' not in st.session_state:
+    st.session_state['city'] = ''
+if 'county' not in st.session_state:
+    st.session_state['county'] = ''
+if 'income_pension' not in st.session_state:    
+    st.session_state['income_pension'] = ''
+if 'patient_comment' not in st.session_state:    
+    st.session_state['patient_comment'] = ''
 
 def login():
     st.header("Login with your email")
@@ -68,8 +86,8 @@ def home():
     else:
         st.error("Email not found in the database.")
 
-# Function for another page (only accessible if logged in)
-def another_page():
+# Function for mental health page (only accessible if logged in)
+def mental_health_page():
     email = st.session_state['email']  # Access the email from session state
 
     # Check if the email exists in the sample_data
@@ -77,11 +95,111 @@ def another_page():
 
     if not matched_rows.empty:
         index = matched_rows.index[0]
-        welcome_text = f"Hello **{sample_data['first_name'][index]}** **{sample_data['last_name'][index]}**! Welcome to the multi-page app!"
-        st.header("Another page")
-        st.write(welcome_text)
+        st.header("Get Mental Health Resources")
+
+        st.markdown("Want to begin your mental health journey? We can help you find the right resources. Answer a few questions to get started.")
+
+        if st.button("Start Evaluation"):
+            st.session_state['active_page'] = "Mental Health Evaluation"
+            st.rerun()
     else:
         st.error("Email not found in the database.")
+
+# Function for mental health evaluation to get resources
+def mental_health_evaluation():
+    st.header("Mental Health Evaluation")
+    st.write("Please review and/or edit the following responses before proceeding.")
+    sample_data['birthday'] = pd.to_datetime(sample_data['birthday'], format='%m/%d/%Y', errors='coerce')
+
+    email = st.session_state['email']  # Access the email from session state
+
+    # Check if the email exists in the sample_data
+    matched_rows = sample_data[sample_data['email'] == email]
+    index = matched_rows.index[0]
+
+    # Reviewing the user's information
+    first_name = st.text_input("First Name", value=sample_data['first_name'][index])
+    last_name = st.text_input("Last Name", value=sample_data['last_name'][index])
+    
+    birthday = st.date_input("Birthday", value=sample_data['birthday'][index], format="MM/DD/YYYY")
+    
+    on_medicare = st.selectbox("Are you on Medicare?", ["Yes", "No"], index=0 if sample_data['on_medicare'][index] == "Yes" else 1)
+    city = st.text_input("City", value=sample_data['city'][index])
+    county = st.text_input("County", value=sample_data['county'][index])
+
+    income_input = st.number_input("Income from Pension", value=sample_data['income_pension'][index])
+    patient_input = st.text_area("Patient comment", placeholder="Type your comment here")
+
+    # Manage confirmation state
+    if 'confirmation_pending' not in st.session_state:
+        st.session_state.confirmation_pending = False
+
+    # Handle Save Information button click
+    if st.button("Save Information"):
+        st.session_state.confirmation_pending = True  # Set the confirmation flag
+
+    # Show confirmation dialog if needed
+    if st.session_state.confirmation_pending:
+        st.write("Are you sure you want to proceed?")
+        if st.button("Yes"):
+            # Updating provided data
+            sample_data.loc[index, 'first_name'] = first_name
+            st.session_state['first_name'] = first_name
+
+            sample_data.loc[index, 'last_name'] = last_name
+            st.session_state['last_name'] = last_name
+
+            sample_data.loc[index, 'birthday'] = birthday
+            st.session_state['birthday'] = birthday
+
+            sample_data.loc[index, 'on_medicare'] = on_medicare
+            st.session_state['on_medicare'] = on_medicare
+
+            sample_data.loc[index, 'city'] = city
+            st.session_state['city'] = city
+
+            sample_data.loc[index, 'county'] = county
+            st.session_state['county'] = county
+
+            sample_data.loc[index, 'income_pension'] = income_input
+            st.session_state['income_pension'] = income_input
+
+            sample_data.loc[index, 'patient_comment'] = patient_input
+            st.session_state['patient_comment'] = patient_input
+
+            st.session_state.show_progress = True
+            
+            st.session_state['active_page'] = "Recommendations"  # Switch page
+            st.session_state.confirmation_pending = False  
+            st.success("Information saved successfully!")  
+            st.rerun()  # Rerun to reflect changes
+        elif st.button("No"):
+            st.session_state.confirmation_pending = False 
+            st.success("Action canceled.") 
+
+# Receiving resources -> NEED TO FINISH THIS PART WITH FILTERING AND CLAUDE
+def get_mental_health_resources():
+    st.header("Mental Health Resources")
+
+    # Check if we need to show progress
+    if 'show_progress' in st.session_state and st.session_state.show_progress:
+        progress_text = "Operation in progress. Please wait."
+        my_bar = st.progress(0, text=progress_text)
+
+        total_steps = 100  
+        sleep_duration = 0.05 
+
+        for percent_complete in range(total_steps):
+            time.sleep(sleep_duration)
+            my_bar.progress(percent_complete + 1, text=progress_text)
+        
+        time.sleep(1)  # Additional delay at the end
+        my_bar.empty()
+
+        # Reset the progress flag after completion
+        st.session_state.show_progress = False
+    else:
+        st.write("No resources to process.")
 
 # Main function to control the flow
 def main():
@@ -98,8 +216,8 @@ def main():
         st.sidebar.title("Navigation")
         if st.sidebar.button("Home"):
             st.session_state['active_page'] = "Home"
-        if st.sidebar.button("Another Page"):
-            st.session_state['active_page'] = "Another Page"
+        if st.sidebar.button("Mental Health Resources"):
+            st.session_state['active_page'] = "Mental Health Resources"
         
         # Add Logout button to sidebar
         if st.sidebar.button("Logout", type='primary'):
@@ -109,15 +227,15 @@ def main():
         # Render the selected page based on session state
         if st.session_state['active_page'] == "Home":
             home()
-        elif st.session_state['active_page'] == "Another Page":
-            another_page()
+        elif st.session_state['active_page'] == "Mental Health Resources":
+            mental_health_page()
+        elif st.session_state['active_page'] == "Mental Health Evaluation":
+            mental_health_evaluation()
+        elif st.session_state['active_page'] == "Recommendations":
+            get_mental_health_resources()
     else:
         # Show login page if not logged in
         login()
 
 if __name__ == "__main__":
     main()
-
-
-# Wonder if we could have an account option to save the data? -> probably use a dataframe object and .csv sheet?
-# Would want to preload some account information? -> probably use a .csv sheet
