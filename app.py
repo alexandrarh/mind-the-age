@@ -38,8 +38,6 @@ if 'city' not in st.session_state:
     st.session_state['city'] = ''
 if 'county' not in st.session_state:
     st.session_state['county'] = ''
-if 'income_pension' not in st.session_state:    
-    st.session_state['income_pension'] = ''
 if 'patient_comment' not in st.session_state:    
     st.session_state['patient_comment'] = ''
 
@@ -127,7 +125,6 @@ def mental_health_evaluation():
     city = st.text_input("City", value=sample_data['city'][index])
     county = st.text_input("County", value=sample_data['county'][index])
 
-    income_input = st.number_input("Income from Pension", value=sample_data['income_pension'][index])
     patient_input = st.text_area("Patient comment", placeholder="Type your comment here")
 
     # Manage confirmation state
@@ -160,9 +157,6 @@ def mental_health_evaluation():
 
             sample_data.loc[index, 'county'] = county
             st.session_state['county'] = county
-
-            sample_data.loc[index, 'income_pension'] = income_input
-            st.session_state['income_pension'] = income_input
 
             sample_data.loc[index, 'patient_comment'] = patient_input
             st.session_state['patient_comment'] = patient_input
