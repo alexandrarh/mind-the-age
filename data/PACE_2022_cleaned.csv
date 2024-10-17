@@ -1,163 +1,163 @@
-_id,Rating Period,Calendar Year,Model,County,PACE Organization,Category of Aid,Lower Bound,Midpoint,Upper Bound,AWOP
-1,01/2022-6/2022,2022,PACE,Los Angeles,AltaMed Senior Care,Full-Dual,4197.13,4397.54,4615.28,6422.25
-2,01/2022-6/2022,2022,PACE,Los Angeles,AltaMed Senior Care,Non-Dual,6339.12,6649.39,6986.54,9417.4
-3,01/2022-6/2022,2022,PACE,Los Angeles,Brandman Centers For Senior Care,Full-Dual,4397.93,4612.08,4844.77,6422.25
-4,01/2022-6/2022,2022,PACE,Los Angeles,Brandman Centers For Senior Care,Non-Dual,7049.46,7401.18,7783.42,9417.4
-5,01/2022-6/2022,2022,PACE,Orange,CalOptima,Full-Dual,3991.62,4189.19,4403.89,5891.84
-6,01/2022-6/2022,2022,PACE,Orange,CalOptima,Non-Dual,7373.11,7745.13,8149.45,10162.78
-7,01/2022-6/2022,2022,PACE,Alameda,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45,6857.71
-8,01/2022-6/2022,2022,PACE,Alameda,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45,10664.4
-9,01/2022-6/2022,2022,PACE,Contra Costa,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45,6296.1
-10,01/2022-6/2022,2022,PACE,Contra Costa,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45,10336.33
-11,01/2022-6/2022,2022,PACE,Fresno,Innovative Integrated Health,Full-Dual,3669.64,3845.04,4035.6,5596.4
-12,01/2022-6/2022,2022,PACE,Fresno,Innovative Integrated Health,Non-Dual,4936.97,5177.66,5439.18,9160.69
-13,01/2022-6/2022,2022,PACE,San Bernardino,InnovAge,Full-Dual,4099.32,4307.54,4533.83,5164.21
-14,01/2022-6/2022,2022,PACE,San Bernardino,InnovAge,Non-Dual,7504.08,7886.88,8302.94,9851.4
-15,01/2022-6/2022,2022,PACE,Riverside,InnovAge,Full-Dual,4099.32,4307.54,4533.83,5164.21
-16,01/2022-6/2022,2022,PACE,Riverside,InnovAge,Non-Dual,7504.08,7886.88,8302.94,9851.4
-17,01/2022-6/2022,2022,PACE,Alameda,On Lok Lifeways,Full-Dual,6448.13,6762.94,7105.01,6857.71
-18,01/2022-6/2022,2022,PACE,Alameda,On Lok Lifeways,Non-Dual,7342.88,7712.66,8114.55,10664.4
-19,01/2022-6/2022,2022,PACE,Santa Clara,On Lok Lifeways,Full-Dual,6288.97,6597.72,6933.21,6572.52
-20,01/2022-6/2022,2022,PACE,Santa Clara,On Lok Lifeways,Non-Dual,7907.35,8304.77,8736.67,10216.69
-21,01/2022-6/2022,2022,PACE,San Francisco,On Lok Lifeways,Full-Dual,8156.64,8546.29,8969.63,8796.24
-22,01/2022-6/2022,2022,PACE,San Francisco,On Lok Lifeways,Non-Dual,9001.79,9446.74,9930.25,12944.28
-23,01/2022-6/2022,2022,PACE,Humboldt,Redwood Coast,Full-Dual,5528.2,5791.1,6076.72,7012.14
-24,01/2022-6/2022,2022,PACE,Humboldt,Redwood Coast,Non-Dual,8274.66,8679.02,9118.4,11259.95
-25,01/2022-6/2022,2022,PACE,San Diego,San Diego PACE,Full-Dual,4185.56,4388.69,4609.4,5566.11
-26,01/2022-6/2022,2022,PACE,San Diego,San Diego PACE,Non-Dual,6678.3,7010.42,7371.34,9338.05
-27,01/2022-6/2022,2022,PACE,San Diego,St. Paul's PACE,Full-Dual,3620.21,3798.07,3991.34,5566.11
-28,01/2022-6/2022,2022,PACE,San Diego,St. Paul's PACE,Non-Dual,5704.84,5992.21,6304.54,9338.05
-29,01/2022-6/2022,2022,PACE,Sacramento,Sutter Senior Care,Full-Dual,5699.95,5975.57,6275.04,6302.35
-30,01/2022-6/2022,2022,PACE,Sacramento,Sutter Senior Care,Non-Dual,8010.56,8406.44,8836.63,9638.42
-31,07/2022-12/2022,2022,PACE,Los Angeles,AltaMed Senior Care,Full-Dual,4197.13,4397.54,4615.28,6422.25
-32,07/2022-12/2022,2022,PACE,Los Angeles,AltaMed Senior Care,Non-Dual,6339.12,6649.39,6986.54,9413.8
-33,07/2022-12/2022,2022,PACE,Los Angeles,Brandman Centers For Senior Care,Full-Dual,4397.93,4612.08,4844.77,6422.25
-34,07/2022-12/2022,2022,PACE,Los Angeles,Brandman Centers For Senior Care,Non-Dual,7049.46,7401.18,7783.42,9413.8
-35,07/2022-12/2022,2022,PACE,Orange,CalOptima,Full-Dual,3991.62,4189.19,4403.89,5891.84
-36,07/2022-12/2022,2022,PACE,Orange,CalOptima,Non-Dual,7373.11,7745.13,8149.45,10159.04
-37,07/2022-12/2022,2022,PACE,Alameda,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45,6857.71
-38,07/2022-12/2022,2022,PACE,Alameda,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45,10661.91
-39,07/2022-12/2022,2022,PACE,Contra Costa,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45,6296.1
-40,07/2022-12/2022,2022,PACE,Contra Costa,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45,10333.48
-41,07/2022-12/2022,2022,PACE,Fresno,Innovative Integrated Health,Full-Dual,3669.64,3845.04,4035.6,5596.4
-42,07/2022-12/2022,2022,PACE,Fresno,Innovative Integrated Health,Non-Dual,4936.97,5177.66,5439.18,9157.62
-43,07/2022-12/2022,2022,PACE,San Bernardino,InnovAge,Full-Dual,4099.32,4307.54,4533.83,5164.21
-44,07/2022-12/2022,2022,PACE,San Bernardino,InnovAge,Non-Dual,7504.08,7886.88,8302.94,9847.74
-45,07/2022-12/2022,2022,PACE,Riverside,InnovAge,Full-Dual,4099.32,4307.54,4533.83,5164.21
-46,07/2022-12/2022,2022,PACE,Riverside,InnovAge,Non-Dual,7504.08,7886.88,8302.94,9847.74
-47,07/2022-12/2022,2022,PACE,Alameda,On Lok Lifeways,Full-Dual,6448.13,6762.94,7105.01,6857.71
-48,07/2022-12/2022,2022,PACE,Alameda,On Lok Lifeways,Non-Dual,7342.88,7712.66,8114.55,10661.91
-49,07/2022-12/2022,2022,PACE,Santa Clara,On Lok Lifeways,Full-Dual,6288.97,6597.72,6933.21,6572.52
-50,07/2022-12/2022,2022,PACE,Santa Clara,On Lok Lifeways,Non-Dual,7907.35,8304.77,8736.67,10213.59
-51,07/2022-12/2022,2022,PACE,San Francisco,On Lok Lifeways,Full-Dual,8156.64,8546.29,8969.63,8796.24
-52,07/2022-12/2022,2022,PACE,San Francisco,On Lok Lifeways,Non-Dual,9001.79,9446.74,9930.25,12941.15
-53,07/2022-12/2022,2022,PACE,Humboldt,Redwood Coast,Full-Dual,5528.2,5791.1,6076.72,7012.14
-54,07/2022-12/2022,2022,PACE,Humboldt,Redwood Coast,Non-Dual,8274.66,8679.02,9118.4,11256.99
-55,07/2022-12/2022,2022,PACE,San Diego,San Diego PACE,Full-Dual,4185.56,4388.69,4609.4,5566.11
-56,07/2022-12/2022,2022,PACE,San Diego,San Diego PACE,Non-Dual,6678.3,7010.42,7371.34,9334.48
-57,07/2022-12/2022,2022,PACE,San Diego,St. Paul's PACE,Full-Dual,3620.21,3798.07,3991.34,5566.11
-58,07/2022-12/2022,2022,PACE,San Diego,St. Paul's PACE,Non-Dual,5704.84,5992.21,6304.54,9334.48
-59,07/2022-12/2022,2022,PACE,Sacramento,Sutter Senior Care,Full-Dual,5699.95,5975.57,6275.04,6302.35
-60,07/2022-12/2022,2022,PACE,Sacramento,Sutter Senior Care,Non-Dual,8010.56,8406.44,8836.63,9635.59
-61,01/2022-6/2022,2022,PACE,San Joaquin,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15,5934.45
-62,01/2022-6/2022,2022,PACE,San Joaquin,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34,10003.12
-63,01/2022-6/2022,2022,PACE,Stanislaus,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15,5934.45
-64,01/2022-6/2022,2022,PACE,Stanislaus,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34,10003.12
-65,01/2022-6/2022,2022,PACE,San Diego,Family Health Center,Full-Dual,4501.37,4719.82,4957.18,5566.11
-66,01/2022-6/2022,2022,PACE,San Diego,Family Health Center,Non-Dual,7153.78,7509.56,7896.19,9338.05
-67,01/2022-6/2022,2022,PACE,San Diego,Gary & Mary West,Full-Dual,4897.56,5135.24,5393.5,5566.11
-68,01/2022-6/2022,2022,PACE,San Diego,Gary & Mary West,Non-Dual,7403.93,7772.15,8172.31,9338.05
-69,01/2022-6/2022,2022,PACE,Los Angeles,Pacific PACE,Full-Dual,4882.9,5119.56,5376.69,6422.25
-70,01/2022-6/2022,2022,PACE,Los Angeles,Pacific PACE,Non-Dual,8233.15,8642.16,9086.64,9417.4
-71,01/2022-6/2022,2022,PACE,Kern,Bakersfield,Full-Dual,4690.11,4916.09,5161.61,5491.23
-72,01/2022-6/2022,2022,PACE,Kern,Bakersfield,Non-Dual,6503.85,6823.95,7171.78,10346.94
-73,01/2022-6/2022,2022,PACE,Tulare,Bakersfield,Full-Dual,4690.11,4916.09,5161.61,5491.23
-74,01/2022-6/2022,2022,PACE,Tulare,Bakersfield,Non-Dual,6503.85,6823.95,7171.78,10346.94
-75,01/2022-6/2022,2022,PACE,Los Angeles,LA Coast,Full-Dual,4882.9,5119.56,5376.69,6422.25
-76,01/2022-6/2022,2022,PACE,Los Angeles,LA Coast,Non-Dual,8233.15,8642.16,9086.64,9417.4
-77,01/2022-6/2022,2022,PACE,San Joaquin,Central Valley,Full-Dual,5583.06,5852.81,6145.9,5934.45
-78,01/2022-6/2022,2022,PACE,San Joaquin,Central Valley,Non-Dual,7881.96,8271.13,8694.04,10003.12
-79,01/2022-6/2022,2022,PACE,Stanislaus,Central Valley,Full-Dual,5583.06,5852.81,6145.9,5934.45
-80,01/2022-6/2022,2022,PACE,Stanislaus,Central Valley,Non-Dual,7881.96,8271.13,8694.04,10003.12
-81,01/2022-6/2022,2022,PACE,Sacramento,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-82,01/2022-6/2022,2022,PACE,Sacramento,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-83,01/2022-6/2022,2022,PACE,Fresno,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-84,01/2022-6/2022,2022,PACE,Fresno,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9016.11
-85,01/2022-6/2022,2022,PACE,Kings,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-86,01/2022-6/2022,2022,PACE,Kings,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9016.11
-87,01/2022-6/2022,2022,PACE,Madera,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-88,01/2022-6/2022,2022,PACE,Madera,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9016.11
-89,01/2022-6/2022,2022,PACE,Tulare,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-90,01/2022-6/2022,2022,PACE,Tulare,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9016.11
-91,01/2022-6/2022,2022,PACE,San Francisco,North East Medical Services,Full-Dual,8278.99,8674.49,9104.17,8796.24
-92,01/2022-6/2022,2022,PACE,San Francisco,North East Medical Services,Non-Dual,9136.77,9588.39,10079.16,12944.28
-93,01/2022-6/2022,2022,PACE,Orange,AltaMed Senior Care,Full-Dual,4221.85,4426.99,4649.88,5891.84
-94,01/2022-6/2022,2022,PACE,Orange,AltaMed Senior Care,Non-Dual,7058.63,7409.78,7791.38,10162.78
-95,01/2022-6/2022,2022,PACE,San Bernardino,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49,5164.21
-96,01/2022-6/2022,2022,PACE,San Bernardino,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87,9851.4
-97,01/2022-6/2022,2022,PACE,Riverside,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49,5164.21
-98,01/2022-6/2022,2022,PACE,Riverside,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87,9851.4
-99,01/2022-6/2022,2022,PACE,Orange,Innovative Integrated Health,Full-Dual,4390.86,4606.32,4840.44,5891.84
-100,01/2022-6/2022,2022,PACE,Orange,Innovative Integrated Health,Non-Dual,7540.07,7918.41,8329.59,10162.78
-101,07/2022-12/2022,2022,PACE,San Joaquin,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15,5934.45
-102,07/2022-12/2022,2022,PACE,San Joaquin,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34,9999.65
-103,07/2022-12/2022,2022,PACE,Stanislaus,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15,5934.45
-104,07/2022-12/2022,2022,PACE,Stanislaus,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34,9999.65
-105,07/2022-12/2022,2022,PACE,San Diego,Family Health Center,Full-Dual,4501.37,4719.82,4957.18,5566.11
-106,07/2022-12/2022,2022,PACE,San Diego,Family Health Center,Non-Dual,7153.78,7509.56,7896.19,9334.48
-107,07/2022-12/2022,2022,PACE,San Diego,Gary & Mary West,Full-Dual,4897.56,5135.24,5393.5,5566.11
-108,07/2022-12/2022,2022,PACE,San Diego,Gary & Mary West,Non-Dual,7403.93,7772.15,8172.31,9334.48
-109,07/2022-12/2022,2022,PACE,Los Angeles,Pacific PACE,Full-Dual,4882.9,5119.56,5376.69,6422.25
-110,07/2022-12/2022,2022,PACE,Los Angeles,Pacific PACE,Non-Dual,8233.15,8642.16,9086.64,9413.8
-111,07/2022-12/2022,2022,PACE,Kern,Bakersfield,Full-Dual,4690.11,4916.09,5161.61,5491.23
-112,07/2022-12/2022,2022,PACE,Kern,Bakersfield,Non-Dual,6503.85,6823.95,7171.78,10343.86
-113,07/2022-12/2022,2022,PACE,Tulare,Bakersfield,Full-Dual,4690.11,4916.09,5161.61,5491.23
-114,07/2022-12/2022,2022,PACE,Tulare,Bakersfield,Non-Dual,6503.85,6823.95,7171.78,10343.86
-115,07/2022-12/2022,2022,PACE,Los Angeles,LA Coast,Full-Dual,4882.9,5119.56,5376.69,6422.25
-116,07/2022-12/2022,2022,PACE,Los Angeles,LA Coast,Non-Dual,8233.15,8642.16,9086.64,9413.8
-117,07/2022-12/2022,2022,PACE,San Joaquin,Central Valley,Full-Dual,5583.06,5852.81,6145.9,5934.45
-118,07/2022-12/2022,2022,PACE,San Joaquin,Central Valley,Non-Dual,7881.96,8271.13,8694.04,9999.65
-119,07/2022-12/2022,2022,PACE,Stanislaus,Central Valley,Full-Dual,5583.06,5852.81,6145.9,5934.45
-120,07/2022-12/2022,2022,PACE,Stanislaus,Central Valley,Non-Dual,7881.96,8271.13,8694.04,9999.65
-121,07/2022-12/2022,2022,PACE,Sacramento,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-122,07/2022-12/2022,2022,PACE,Sacramento,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-123,07/2022-12/2022,2022,PACE,Fresno,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-124,07/2022-12/2022,2022,PACE,Fresno,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9013.35
-125,07/2022-12/2022,2022,PACE,Kings,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-126,07/2022-12/2022,2022,PACE,Kings,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9013.35
-127,07/2022-12/2022,2022,PACE,Madera,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-128,07/2022-12/2022,2022,PACE,Madera,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9013.35
-129,07/2022-12/2022,2022,PACE,Tulare,Sequoia,Full-Dual,4582.85,4806.0,5048.47,5384.69
-130,07/2022-12/2022,2022,PACE,Tulare,Sequoia,Non-Dual,7930.83,8326.55,8756.59,9013.35
-131,07/2022-12/2022,2022,PACE,San Francisco,North East Medical Services,Full-Dual,8278.99,8674.49,9104.17,8796.24
-132,07/2022-12/2022,2022,PACE,San Francisco,North East Medical Services,Non-Dual,9136.77,9588.39,10079.16,12941.15
-133,07/2022-12/2022,2022,PACE,Orange,AltaMed Senior Care,Full-Dual,4221.85,4426.99,4649.88,5891.84
-134,07/2022-12/2022,2022,PACE,Orange,AltaMed Senior Care,Non-Dual,7058.63,7409.78,7791.38,10159.04
-135,07/2022-12/2022,2022,PACE,San Bernardino,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49,5164.21
-136,07/2022-12/2022,2022,PACE,San Bernardino,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87,9847.74
-137,07/2022-12/2022,2022,PACE,Riverside,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49,5164.21
-138,07/2022-12/2022,2022,PACE,Riverside,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87,9847.74
-139,07/2022-12/2022,2022,PACE,Orange,Innovative Integrated Health,Full-Dual,4390.86,4606.32,4840.44,5891.84
-140,07/2022-12/2022,2022,PACE,Orange,Innovative Integrated Health,Non-Dual,7540.07,7918.41,8329.59,10159.04
-141,01/2022-6/2022,2022,PACE,El Dorado,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-142,01/2022-6/2022,2022,PACE,El Dorado,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-143,07/2022-12/2022,2022,PACE,El Dorado,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-144,07/2022-12/2022,2022,PACE,El Dorado,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-145,01/2022-6/2022,2022,PACE,Placer,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-146,01/2022-6/2022,2022,PACE,Placer,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-147,07/2022-12/2022,2022,PACE,Placer,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-148,07/2022-12/2022,2022,PACE,Placer,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-149,01/2022-6/2022,2022,PACE,San Joaquin,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-150,01/2022-6/2022,2022,PACE,San Joaquin,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-151,07/2022-12/2022,2022,PACE,San Joaquin,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-152,07/2022-12/2022,2022,PACE,San Joaquin,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-153,01/2022-6/2022,2022,PACE,Sutter,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-154,01/2022-6/2022,2022,PACE,Sutter,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-155,07/2022-12/2022,2022,PACE,Sutter,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-156,07/2022-12/2022,2022,PACE,Sutter,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-157,01/2022-6/2022,2022,PACE,Yuba,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-158,01/2022-6/2022,2022,PACE,Yuba,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9609.57
-159,07/2022-12/2022,2022,PACE,Yuba,InnovAge,Full-Dual,5142.73,5395.26,5669.67,6084.18
-160,07/2022-12/2022,2022,PACE,Yuba,InnovAge,Non-Dual,7900.18,8295.21,8724.52,9606.74
-161,07/2022-12/2022,2022,PACE,Los Angeles,ConcertoHealth PACE,Full-Dual,5064.81,5315.17,5587.29,6422.25
-162,07/2022-12/2022,2022,PACE,Los Angeles,ConcertoHealth PACE,Non-Dual,8545.47,8979.52,9451.38,9413.8
+County,PACE Organization,Category of Aid,Lower Bound,Midpoint,Upper Bound
+Alameda,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45
+Alameda,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45
+Alameda,On Lok Lifeways,Full-Dual,6448.13,6762.94,7105.01
+Alameda,On Lok Lifeways,Full-Dual,6448.13,6762.94,7105.01
+Alameda,On Lok Lifeways,Non-Dual,7342.88,7712.66,8114.55
+Alameda,On Lok Lifeways,Non-Dual,7342.88,7712.66,8114.55
+Alameda,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45
+Alameda,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45
+Contra Costa,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45
+Contra Costa,Center For Elders Independence (CEI),Full-Dual,6026.98,6330.07,6659.45
+Contra Costa,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45
+Contra Costa,Center For Elders Independence (CEI),Non-Dual,8557.1,8990.46,9461.45
+El Dorado,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+El Dorado,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+El Dorado,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+El Dorado,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Fresno,Innovative Integrated Health,Full-Dual,3669.64,3845.04,4035.6
+Fresno,Innovative Integrated Health,Full-Dual,3669.64,3845.04,4035.6
+Fresno,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Fresno,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Fresno,Innovative Integrated Health,Non-Dual,4936.97,5177.66,5439.18
+Fresno,Innovative Integrated Health,Non-Dual,4936.97,5177.66,5439.18
+Fresno,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Fresno,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Humboldt,Redwood Coast,Full-Dual,5528.2,5791.1,6076.72
+Humboldt,Redwood Coast,Full-Dual,5528.2,5791.1,6076.72
+Humboldt,Redwood Coast,Non-Dual,8274.66,8679.02,9118.4
+Humboldt,Redwood Coast,Non-Dual,8274.66,8679.02,9118.4
+Kern,Bakersfield,Full-Dual,4690.11,4916.09,5161.61
+Kern,Bakersfield,Full-Dual,4690.11,4916.09,5161.61
+Kern,Bakersfield,Non-Dual,6503.85,6823.95,7171.78
+Kern,Bakersfield,Non-Dual,6503.85,6823.95,7171.78
+Kings,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Kings,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Kings,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Kings,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Los Angeles,AltaMed Senior Care,Full-Dual,4197.13,4397.54,4615.28
+Los Angeles,AltaMed Senior Care,Full-Dual,4197.13,4397.54,4615.28
+Los Angeles,Brandman Centers For Senior Care,Full-Dual,4397.93,4612.08,4844.77
+Los Angeles,Brandman Centers For Senior Care,Full-Dual,4397.93,4612.08,4844.77
+Los Angeles,Pacific PACE,Full-Dual,4882.9,5119.56,5376.69
+Los Angeles,LA Coast,Full-Dual,4882.9,5119.56,5376.69
+Los Angeles,Pacific PACE,Full-Dual,4882.9,5119.56,5376.69
+Los Angeles,LA Coast,Full-Dual,4882.9,5119.56,5376.69
+Los Angeles,ConcertoHealth PACE,Full-Dual,5064.81,5315.17,5587.29
+Los Angeles,AltaMed Senior Care,Non-Dual,6339.12,6649.39,6986.54
+Los Angeles,AltaMed Senior Care,Non-Dual,6339.12,6649.39,6986.54
+Los Angeles,Brandman Centers For Senior Care,Non-Dual,7049.46,7401.18,7783.42
+Los Angeles,Brandman Centers For Senior Care,Non-Dual,7049.46,7401.18,7783.42
+Los Angeles,Pacific PACE,Non-Dual,8233.15,8642.16,9086.64
+Los Angeles,LA Coast,Non-Dual,8233.15,8642.16,9086.64
+Los Angeles,Pacific PACE,Non-Dual,8233.15,8642.16,9086.64
+Los Angeles,LA Coast,Non-Dual,8233.15,8642.16,9086.64
+Los Angeles,ConcertoHealth PACE,Non-Dual,8545.47,8979.52,9451.38
+Madera,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Madera,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Madera,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Madera,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Orange,CalOptima,Full-Dual,3991.62,4189.19,4403.89
+Orange,CalOptima,Full-Dual,3991.62,4189.19,4403.89
+Orange,AltaMed Senior Care,Full-Dual,4221.85,4426.99,4649.88
+Orange,AltaMed Senior Care,Full-Dual,4221.85,4426.99,4649.88
+Orange,Innovative Integrated Health,Full-Dual,4390.86,4606.32,4840.44
+Orange,Innovative Integrated Health,Full-Dual,4390.86,4606.32,4840.44
+Orange,AltaMed Senior Care,Non-Dual,7058.63,7409.78,7791.38
+Orange,AltaMed Senior Care,Non-Dual,7058.63,7409.78,7791.38
+Orange,CalOptima,Non-Dual,7373.11,7745.13,8149.45
+Orange,CalOptima,Non-Dual,7373.11,7745.13,8149.45
+Orange,Innovative Integrated Health,Non-Dual,7540.07,7918.41,8329.59
+Orange,Innovative Integrated Health,Non-Dual,7540.07,7918.41,8329.59
+Placer,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Placer,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Placer,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Placer,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Riverside,InnovAge,Full-Dual,4099.32,4307.54,4533.83
+Riverside,InnovAge,Full-Dual,4099.32,4307.54,4533.83
+Riverside,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49
+Riverside,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49
+Riverside,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87
+Riverside,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87
+Riverside,InnovAge,Non-Dual,7504.08,7886.88,8302.94
+Riverside,InnovAge,Non-Dual,7504.08,7886.88,8302.94
+Sacramento,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Sacramento,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Sacramento,Sutter Senior Care,Full-Dual,5699.95,5975.57,6275.04
+Sacramento,Sutter Senior Care,Full-Dual,5699.95,5975.57,6275.04
+Sacramento,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Sacramento,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Sacramento,Sutter Senior Care,Non-Dual,8010.56,8406.44,8836.63
+Sacramento,Sutter Senior Care,Non-Dual,8010.56,8406.44,8836.63
+San Bernardino,InnovAge,Full-Dual,4099.32,4307.54,4533.83
+San Bernardino,InnovAge,Full-Dual,4099.32,4307.54,4533.83
+San Bernardino,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49
+San Bernardino,Neighborhood Healthcare,Full-Dual,4113.29,4319.92,4544.49
+San Bernardino,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87
+San Bernardino,Neighborhood Healthcare,Non-Dual,7291.93,7661.84,8063.87
+San Bernardino,InnovAge,Non-Dual,7504.08,7886.88,8302.94
+San Bernardino,InnovAge,Non-Dual,7504.08,7886.88,8302.94
+San Diego,St. Paul's PACE,Full-Dual,3620.21,3798.07,3991.34
+San Diego,St. Paul's PACE,Full-Dual,3620.21,3798.07,3991.34
+San Diego,San Diego PACE,Full-Dual,4185.56,4388.69,4609.4
+San Diego,San Diego PACE,Full-Dual,4185.56,4388.69,4609.4
+San Diego,Family Health Center,Full-Dual,4501.37,4719.82,4957.18
+San Diego,Family Health Center,Full-Dual,4501.37,4719.82,4957.18
+San Diego,Gary & Mary West,Full-Dual,4897.56,5135.24,5393.5
+San Diego,Gary & Mary West,Full-Dual,4897.56,5135.24,5393.5
+San Diego,St. Paul's PACE,Non-Dual,5704.84,5992.21,6304.54
+San Diego,St. Paul's PACE,Non-Dual,5704.84,5992.21,6304.54
+San Diego,San Diego PACE,Non-Dual,6678.3,7010.42,7371.34
+San Diego,San Diego PACE,Non-Dual,6678.3,7010.42,7371.34
+San Diego,Family Health Center,Non-Dual,7153.78,7509.56,7896.19
+San Diego,Family Health Center,Non-Dual,7153.78,7509.56,7896.19
+San Diego,Gary & Mary West,Non-Dual,7403.93,7772.15,8172.31
+San Diego,Gary & Mary West,Non-Dual,7403.93,7772.15,8172.31
+San Francisco,On Lok Lifeways,Full-Dual,8156.64,8546.29,8969.63
+San Francisco,On Lok Lifeways,Full-Dual,8156.64,8546.29,8969.63
+San Francisco,North East Medical Services,Full-Dual,8278.99,8674.49,9104.17
+San Francisco,North East Medical Services,Full-Dual,8278.99,8674.49,9104.17
+San Francisco,On Lok Lifeways,Non-Dual,9001.79,9446.74,9930.25
+San Francisco,On Lok Lifeways,Non-Dual,9001.79,9446.74,9930.25
+San Francisco,North East Medical Services,Non-Dual,9136.77,9588.39,10079.16
+San Francisco,North East Medical Services,Non-Dual,9136.77,9588.39,10079.16
+San Joaquin,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+San Joaquin,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+San Joaquin,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15
+San Joaquin,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15
+San Joaquin,Central Valley,Full-Dual,5583.06,5852.81,6145.9
+San Joaquin,Central Valley,Full-Dual,5583.06,5852.81,6145.9
+San Joaquin,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34
+San Joaquin,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34
+San Joaquin,Central Valley,Non-Dual,7881.96,8271.13,8694.04
+San Joaquin,Central Valley,Non-Dual,7881.96,8271.13,8694.04
+San Joaquin,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+San Joaquin,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Santa Clara,On Lok Lifeways,Full-Dual,6288.97,6597.72,6933.21
+Santa Clara,On Lok Lifeways,Full-Dual,6288.97,6597.72,6933.21
+Santa Clara,On Lok Lifeways,Non-Dual,7907.35,8304.77,8736.67
+Santa Clara,On Lok Lifeways,Non-Dual,7907.35,8304.77,8736.67
+Stanislaus,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15
+Stanislaus,Stockton PACE,Full-Dual,5541.5,5809.24,6100.15
+Stanislaus,Central Valley,Full-Dual,5583.06,5852.81,6145.9
+Stanislaus,Central Valley,Full-Dual,5583.06,5852.81,6145.9
+Stanislaus,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34
+Stanislaus,Stockton PACE,Non-Dual,7823.31,8209.58,8629.34
+Stanislaus,Central Valley,Non-Dual,7881.96,8271.13,8694.04
+Stanislaus,Central Valley,Non-Dual,7881.96,8271.13,8694.04
+Sutter,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Sutter,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Sutter,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Sutter,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Tulare,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Tulare,Sequoia,Full-Dual,4582.85,4806.0,5048.47
+Tulare,Bakersfield,Full-Dual,4690.11,4916.09,5161.61
+Tulare,Bakersfield,Full-Dual,4690.11,4916.09,5161.61
+Tulare,Bakersfield,Non-Dual,6503.85,6823.95,7171.78
+Tulare,Bakersfield,Non-Dual,6503.85,6823.95,7171.78
+Tulare,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Tulare,Sequoia,Non-Dual,7930.83,8326.55,8756.59
+Yuba,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Yuba,InnovAge,Full-Dual,5142.73,5395.26,5669.67
+Yuba,InnovAge,Non-Dual,7900.18,8295.21,8724.52
+Yuba,InnovAge,Non-Dual,7900.18,8295.21,8724.52
