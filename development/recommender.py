@@ -15,8 +15,14 @@ resourceLinks = pd.read_csv('data/resource_link.csv')
 
 # manually standardized some matching words:
 # how do I take into account race&gender specific websites?
+# string inputs must be standarized!! lowercase and offical title to match the map!
 mappingCondition = {
-    'Anxiety': 'anxiety,mental,health,wellness'
+    'Anxiety': 'anxiety,mental,health,wellness',
+    'Depression': 'depression,suicidal,mental',
+    'Bipolar': 'bipolar,disorder,health',
+    'BPD':'',
+    'Schizophrenia' : '',
+    'Other' : '',
 }
 mappingGender = {
     'Male' : 'male,men,man,boy', 
@@ -25,7 +31,7 @@ mappingGender = {
 }
 mappingRace = {
     'African American' : 'Black',
-    'White' : 'group,people,community'
+    'White' : 'people,community'
 }
 
 def match_pace_facility(county):
@@ -46,27 +52,33 @@ def match_pace_facility(county):
 # match resource link using fuzzy matching
 # matching algorithm not very accurate
 def match_resource_link(category, usedLinks):
-
+    set = True 
+    threshold = 80
     # function perfroms fuzzy string matching by compairing strings and returing the one that is most similar
     # and a score that indicates how similar the match is to the input string tuple ("string", 90)
-    # just separate extract function by the 3 criteria 
-    bestMatch = process.extractOne(category, resourceLinks['Description']) 
-    if bestMatch and bestMatch[1] > 10:  # threshold for match confidence
-        matchedRow = resourceLinks[resourceLinks['Description'] == bestMatch[0]]
-        link = matchedRow['Link'].values[0]
-        #check if it is a link we used OR add it to the used list
-        if link not in usedLinks:
-            usedLinks.append(link)
-            return matchedRow['Link'].values[0]
-        # else: find another link  
-    else:
-        return "No matching resource link found"
-    
+    # just separate extract function by the 3 criteria
+    while threshold > 0:
+        bestMatch = process.extractOne(category, resourceLinks['Description']) 
+        if bestMatch:  # threshold for match confidence
+            matchedRow = resourceLinks[resourceLinks['Description'] == bestMatch[0]]
+            link = matchedRow['Link'].values[0]
+            #check if it is a link we used OR add it to the used list
+            if link not in usedLinks:
+                usedLinks.append(link)
+                return link
+            else: 
+                threshold -= 10
+            # else: find another link  
+        else: 
+            return "No matching resource"
 
+# in the app we import the file and functions
+# we can call this function and pass the user profile as a dictionary
+# the returning value is another dictionary mapping the links to their respective category
 def get_all_links(user_input):
     # user input is a key value
     # we standarize and retrieve the according value 
-    condition = mappingCondition.get(user_input.get('Condition'),user_input.get('Race'))
+    condition = mappingCondition.get(user_input.get('Condition'),user_input.get('Condition'))
     race = mappingRace.get(user_input.get('Race'), user_input.get('Race'))
     gender = mappingGender.get(user_input.get('Gender'),user_input.get('Gender'))
 
@@ -83,9 +95,9 @@ def get_all_links(user_input):
 # Example user input
 # fuzzy matching maps white -> black
 user_input = {
-    'Condition': 'depression',
-    'County': 'Alameda',
-    'Race': 'Asian',
+    'Condition': 'Bipolar Disorder',
+    'County': 'San Francisco',
+    'Race': 'Black',
     'Gender': 'Women'
 }
 
