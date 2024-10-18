@@ -12,6 +12,3 @@ base = "dark"
 
 # Color used for almost all text.
 # textColor =
-
-[secrets]
-files = ["/Users/alexavndra/Desktop/hackathon_repo/.streamlit/secrets.toml"]
