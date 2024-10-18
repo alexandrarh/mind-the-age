@@ -14,7 +14,6 @@ myenv/
 
 # Streamlit docs
 .streamlit/secrets.toml
-.streamlit/config.toml
 
 # Test files
 sample.py
