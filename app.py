@@ -40,6 +40,8 @@ if 'county' not in st.session_state:
     st.session_state['county'] = ''
 if 'patient_comment' not in st.session_state:    
     st.session_state['patient_comment'] = ''
+if 'medical_input' not in st.session_state:
+    st.session_state['medical_input'] = ''
 
 def login():
     st.header("Login with your email")
@@ -159,7 +161,9 @@ def mental_health_evaluation():
             st.session_state['county'] = county
 
             sample_data.loc[index, 'patient_comment'] = str(patient_input)
-            st.session_state['patient_comment'] = patient_input
+            st.session_state['patient_comment'] = str(patient_input)
+
+            st.session_state['medical_input'] = str(sample_data.loc[index, 'medical_input'])
 
             st.session_state.show_progress = True
             
@@ -169,13 +173,34 @@ def mental_health_evaluation():
             st.rerun()  # Rerun to reflect changes
         elif st.button("No"):
             st.session_state.confirmation_pending = False 
-            st.success("Action canceled.") 
+            st.success("Action canceled.")
+            
+'''Get mental health leaning based on input (from medical and patient comment)'''
+def get_mental_leanings(patient_comment):
+    if patient_comment == '' or patient_comment is None:
+        if st.session_state['medical_input'] == '' or st.session_state['medical_input'] is None:
+            return "Can't determine"
+        else:
+            # Wrap the input in a list to avoid the string object error
+            predicted_label = mental_health_classifier.predict([st.session_state['medical_input']])
+    else:
+        if st.session_state['medical_input'] == '' or st.session_state['medical_input'] is None:
+            predicted_label = mental_health_classifier.predict([patient_comment])
+        else:
+            full_input = st.session_state['medical_input'] + '\n' + patient_comment
+            # Again, wrap the combined input in a list
+            predicted_label = mental_health_classifier.predict([full_input])
+
+    return predicted_label[0]
 
 # Receiving resources -> NEED TO FINISH THIS PART WITH FILTERING AND CLAUDE
 def get_mental_health_resources():
     st.header("Mental Health Resources")
 
-    # Check if we need to show progress
+    # Get mental health leanings based on input
+    mental_leanings = get_mental_leanings(st.session_state['patient_comment'])
+
+    # Show progress
     if 'show_progress' in st.session_state and st.session_state.show_progress:
         progress_text = "Operation in progress. Please wait."
         my_bar = st.progress(0, text=progress_text)
@@ -192,9 +217,11 @@ def get_mental_health_resources():
 
         # Function to display mental health resources
         st.markdown("**:blue[Based on your responses and information, here are some mental health resources:]**")
+        
         # Test part -> remove when fixed
         st.write(st.session_state['county'])
         st.write(st.session_state['patient_comment'])
+        st.write(mental_leanings)
 
         # Reset the progress flag after completion
         st.session_state.show_progress = False
