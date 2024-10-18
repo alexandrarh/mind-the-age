@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import pickle
 import anthropic
 import time
+from recommender import get_all_links, match_pace_facility
 
 # Loading classifier model
 with open('mental_health_classifier.pkl', 'rb') as f:
@@ -42,6 +43,10 @@ if 'patient_comment' not in st.session_state:
     st.session_state['patient_comment'] = ''
 if 'medical_input' not in st.session_state:
     st.session_state['medical_input'] = ''
+if 'Race' not in st.session_state:
+    st.session_state['Race'] = ''
+if 'Gender' not in st.session_state:
+    st.session_state['Gender'] = ''
 
 def login():
     st.header("Login with your email")
@@ -83,6 +88,9 @@ def home():
 
         st.subheader("Medicare Status", divider="blue")
         st.write(f"{sample_data['on_medicare'][index]}")
+
+        st.subheader("Race",divider='blue')
+        st.write(f"{sample_data['race'][index]}")
     else:
         st.error("Email not found in the database.")
 
@@ -197,8 +205,25 @@ def get_mental_leanings(patient_comment):
 def get_mental_health_resources():
     st.header("Mental Health Resources")
 
+    # access the correct user row
+    matched_rows = sample_data[sample_data['email'] == st.session_state['email']]
+    index = matched_rows.index[0]
+
     # Get mental health leanings based on input
     mental_leanings = get_mental_leanings(st.session_state['patient_comment'])
+
+    # retrive county, race, conditon (mental leanings) and gender from pandas data frame
+    # save all of that into a dictionary user input
+    userInput = {
+    'Condition': mental_leanings,
+    'County': sample_data['county'][index],
+    'Race': sample_data['race'][index],
+    'Gender': sample_data['gender'][index]
+   }
+    # import recommender and and match_pace_facility() get_all_links() function
+    # return and st.write pace facility
+    # return save and parse the returned dictionary 
+    # st.write all the links accordingly 
 
     # Show progress
     if 'show_progress' in st.session_state and st.session_state.show_progress:
@@ -222,6 +247,7 @@ def get_mental_health_resources():
         st.write(st.session_state['county'])
         st.write(st.session_state['patient_comment'])
         st.write(mental_leanings)
+        st.write(userInput)
 
         # Reset the progress flag after completion
         st.session_state.show_progress = False
