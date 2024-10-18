@@ -18,3 +18,7 @@ myenv/
 
 # Test files
 sample.py
+
+# Output files
+.DS_Store
+__pycache__/
