@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pickle
 import anthropic
 import time
-from recommender import get_all_links, match_pace_facility
+from recommender import theRecommender
 
 # Loading classifier model
 with open('mental_health_classifier.pkl', 'rb') as f:
@@ -19,6 +19,9 @@ anthropic = anthropic.Anthropic(api_key=anthropic_key)
 # Loading data
 sample_data = pd.read_csv('database_sample.csv')
 sample_data['patient_comment'] = sample_data['patient_comment'].fillna('').astype('object')
+
+# Loading recommender
+class_recommender = theRecommender()
 
 # Headers for all pages
 st.title("MindTheAge")
@@ -183,7 +186,7 @@ def mental_health_evaluation():
             st.session_state.confirmation_pending = False 
             st.success("Action canceled.")
             
-'''Get mental health leaning based on input (from medical and patient comment)'''
+# Get mental health leaning based on input (from medical and patient comment)
 def get_mental_leanings(patient_comment):
     if patient_comment == '' or patient_comment is None:
         if st.session_state['medical_input'] == '' or st.session_state['medical_input'] is None:
@@ -220,6 +223,8 @@ def get_mental_health_resources():
     'Race': sample_data['race'][index],
     'Gender': sample_data['gender'][index]
    }
+    paceFacility = class_recommender.match_pace_facility(sample_data['county'][index])
+    links, descriptions, resourceTitles = class_recommender.get_all_links(userInput)
     # import recommender and and match_pace_facility() get_all_links() function
     # return and st.write pace facility
     # return save and parse the returned dictionary 
@@ -244,10 +249,23 @@ def get_mental_health_resources():
         st.markdown("**:blue[Based on your responses and information, here are some mental health resources:]**")
         
         # Test part -> remove when fixed
-        st.write(st.session_state['county'])
-        st.write(st.session_state['patient_comment'])
-        st.write(mental_leanings)
-        st.write(userInput)
+        # st.write(st.session_state['county'])
+        # st.write(st.session_state['patient_comment'])
+        # st.write(mental_leanings)
+
+        st.write("**:green[Pace Facility]**")
+        st.write(paceFacility)
+
+        # resourceTitles
+        st.write("**:orange[Other resources]**")
+        st.write(f"**{resourceTitles['Race']}**")
+        st.write(f"{descriptions['Race']} You can access it here: {links['Race']}")
+
+        st.write(f"**{resourceTitles['Gender']}**")
+        st.write(f"{descriptions['Gender']} You can access it here: {links['Gender']}")
+
+        st.write(f"**{resourceTitles['Condition']}**")
+        st.write(f"{descriptions['Condition']} You can access it here: {links['Condition']}")
 
         # Reset the progress flag after completion
         st.session_state.show_progress = False
